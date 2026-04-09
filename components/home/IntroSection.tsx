@@ -4,8 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 import { useLang } from "@/context/LangContext";
 import ParallaxImage from "@/components/ParallaxImage";
 
-const FARM_IMG = "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80";
-const ORGANIC_IMG = "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=80";
+const FARM_IMG = "/images/farm.jpg";
+const ORGANIC_IMG = "/images/about.jpg";
 
 export default function IntroSection() {
   const { t } = useLang();
@@ -73,7 +73,7 @@ export default function IntroSection() {
 
         {/* Images Grid - Spans 5 columns on large screens */}
         <div data-scroll-fade className="lg:col-span-5 h-full flex flex-col justify-center gap-8">
-          <div className="relative w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
+          <div className="relative w-full  rounded-[40px] overflow-hidden shadow-2xl">
             <ParallaxImage src={FARM_IMG} alt="Farm" className="object-cover" />
           </div>
           

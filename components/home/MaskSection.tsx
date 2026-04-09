@@ -1,7 +1,7 @@
 "use client";
 import { useLang } from "@/context/LangContext";
 
-const NUTS_IMG = "https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=1000&q=80";
+const NUTS_IMG = "/images/datesbyjvm.webp";
 
 export default function MaskSection() {
   const { t } = useLang();

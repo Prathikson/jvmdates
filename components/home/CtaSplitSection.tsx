@@ -4,7 +4,7 @@ import { Leaf, Package, ChevronRight } from "lucide-react";
 import { useLang } from "@/context/LangContext";
 import ParallaxImage from "@/components/ParallaxImage";
 
-const ORGANIC_IMG = "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=80";
+const ORGANIC_IMG = "/images/farm2.jpg";
 
 export default function CtaSplitSection() {
   const { t } = useLang();
@@ -42,7 +42,7 @@ export default function CtaSplitSection() {
               {t("No artificial preservatives, colours, or flavours. Every product is exactly as nature intended — pure and raw.", "செயற்கை பதிமங்கள், நிறங்கள் அல்லது சுவைகள் இல்லை.")}
             </p>
           </div>
-          <div className="relative mt-12 rounded-[32px] overflow-hidden aspect-[16/9] shadow-xl">
+          <div className="relative mt-12 rounded-[32px] overflow-hidden shadow-xl">
              <ParallaxImage src={ORGANIC_IMG} alt="Organic" className="object-cover" />
           </div>
         </div>

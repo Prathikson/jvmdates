@@ -9,13 +9,13 @@ import { useState } from "react";
 type TranslationFn = (en: string, ta?: string) => string;
 
 const PRODUCT_IMGS: Record<string, string> = {
-  "medjool-dates": "https://images.unsplash.com/photo-1609171003004-3e04fa4f0d21?w=900&q=85",
-  "ajwa-dates":    "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?w=900&q=85",
-  "pistachios":    "https://images.unsplash.com/photo-1590156562745-5a619a4eee2a?w=900&q=85",
-  "gift-hamper":   "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=900&q=85",
+  "medjool-dates": "/images/products/medjool-dates.webp",
+  "ajwa-dates":    "/images/products/ajwa-dates.webp",
+  "pistachios":    "/images/products/pistachios.webp",
+  "gift-hamper":   "/images/products/gift.webp",
 };
 
-const DEFAULT_IMG = "https://images.unsplash.com/photo-1574856344991-aaa31b6f4b96?w=900&q=85";
+const DEFAULT_IMG = "/images/products/cashews.webp";
 
 interface ProductCardProps {
   p: Product;
@@ -104,7 +104,7 @@ export default function FeaturedProducts() {
       
       {/* 1. GIGANTIC HEADER SECTION */}
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-20 md:mb-32" data-scroll-fade>
-        <div className="max-w-4xl">
+        <div className="max-w-5xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="h-[2px] w-14 bg-gold flex-shrink-0" />
             <p className="text-[12px] md:text-sm font-bold tracking-[0.4em] uppercase text-gold">

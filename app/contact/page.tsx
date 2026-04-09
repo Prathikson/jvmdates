@@ -63,9 +63,10 @@ export default function ContactPage() {
 
       {/* Map */}
       <section id="map" className="mx-5 sm:mx-8 lg:mx-12 mb-16 rounded-4xl overflow-hidden" data-scroll-fade>
-        <div className="relative" style={{ height: "420px" }}>
+        <div className="relative" style={{ height: "820px" }}>
+
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.363!2d76.9558!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAxJzAwLjUiTiA3NsKwNTcnMjAuOSJF!5e0!3m2!1sen!2sin!4v1704067200000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.629869148495!2d76.9389466!3d10.9912852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8593f9ad0dd21%3A0xf5b1ae5f8ed4b6c7!2s24%2C%20Periya%20Thambi%20Nagar%2C%20Selvapuram%20South%2C%20Selvapuram%2C%20Coimbatore%2C%20Tamil%20Nadu%20641026%2C%20India!5e0!3m2!1sen!2sca!4v1775699589135!5m2!1sen!2sca"
             width="100%" height="100%"
             style={{ border: 0, filter: "saturate(0.7) contrast(1.05)" }}
             allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"

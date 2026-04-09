@@ -15,20 +15,20 @@ import ProductModal from "@/components/products/ProductModal";
 if (typeof window !== "undefined") { gsap.registerPlugin(ScrollTrigger); }
 
 export const PRODUCT_IMGS: Record<string, string> = {
-  "medjool-dates": "https://images.unsplash.com/photo-1609171003004-3e04fa4f0d21?w=800&q=85",
-  "ajwa-dates":    "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?w=800&q=85",
-  "deglet-noor":   "https://images.unsplash.com/photo-1574856344991-aaa31b6f4b96?w=800&q=85",
-  "khudri-dates":  "https://images.unsplash.com/photo-1574856344991-aaa31b6f4b96?w=800&q=85",
-  "cashews":       "https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=800&q=85",
-  "almonds":       "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=800&q=85",
-  "pistachios":    "https://images.unsplash.com/photo-1590156562745-5a619a4eee2a?w=800&q=85",
-  "walnuts":       "https://images.unsplash.com/photo-1572996993381-5e8c1e9c9937?w=800&q=85",
-  "raisins":       "https://images.unsplash.com/photo-1596591606975-97ee5cef3a1e?w=800&q=85",
-  "figs":          "https://images.unsplash.com/photo-1601206776960-a2e1a8e3c7fc?w=800&q=85",
-  "apricots":      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=85",
-  "gift-hamper":   "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=85",
+  "medjool-dates": "/images/products/medjool-dates.webp",
+  "ajwa-dates":    "/images/products/ajwa-dates.webp",
+  "deglet-noor":   "/images/products/deglet-noor.webp",
+  "khudri-dates":  "/images/products/khudri-dates.webp",
+  "cashews":       "/images/products/cashews.webp",
+  "almonds":       "/images/products/almonds.webp",
+  "pistachios":    "/images/products/pistachios.webp",
+  "walnuts":       "/images/products/walnuts.webp",
+  "raisins":       "/images/products/raisins.webp",
+  "figs":          "/images/products/figs.webp",
+  "apricots":      "/images/products/apricots.webp",
+  "gift-hamper":   "/images/products/gift.webp",
 };
-export const DEFAULT_IMG = "https://images.unsplash.com/photo-1574856344991-aaa31b6f4b96?w=800&q=85";
+export const DEFAULT_IMG = "/images/products/medjool-dates.webp";
 
 type SortKey = "name" | "price-asc" | "price-desc" | "rating";
 
