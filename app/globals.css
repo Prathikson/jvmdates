@@ -33,9 +33,9 @@ body {
 }
 body.lang-ta { font-family: 'Hind Madurai', sans-serif; }
 ::selection { background: #E8C96A; color: #003934; }
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #FAF8F3; }
-::-webkit-scrollbar-thumb { background: #E8E2D9; border-radius: 3px; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F5EDD8; }
+::-webkit-scrollbar-thumb { background: var(--forest); border-radius: 3px; }
 
 /* ── PRELOADER ── */
 .preloader {
