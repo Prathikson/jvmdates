@@ -122,15 +122,42 @@ body.lang-ta { font-family: 'Hind Madurai', sans-serif; }
 
 /* ── COOKIE BANNER ── */
 .cookie-banner {
-  position: fixed; bottom: 1.5rem; left: 50%;
-  transform: translateX(-50%) translateY(160px);
-  z-index: 200; background: #003934; color: #F5EDD8;
-  border-radius: 0.75rem; padding: 1.25rem 1.5rem;
-  max-width: 480px; width: calc(100vw - 3rem);
-  transition: transform 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1rem;
+  right: 1rem;
+  width: auto;
+  transform: translateY(calc(100% + 3rem));  /* pushes fully below viewport */
+  visibility: hidden;                         /* completely hidden when off-screen */
+  z-index: 200;
+  background: #003934;
+  color: #F5EDD8;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              visibility 0s linear 0.5s;      /* delay visibility until slide-out finishes */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
 }
-.cookie-banner.show { transform: translateX(-50%) translateY(0); }
+
+.cookie-banner.show {
+  transform: translateY(0);
+  visibility: visible;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              visibility 0s linear 0s;        /* show immediately on open */
+}
+
+@media (min-width: 540px) {
+  .cookie-banner {
+    left: 50%;
+    right: auto;
+    width: calc(100vw - 3rem);
+    max-width: 480px;
+    transform: translateX(-50%) translateY(calc(100% + 3rem));
+  }
+  .cookie-banner.show {
+    transform: translateX(-50%) translateY(0);
+  }
+}
 
 /* ── CART ── */
 .cart-overlay {
