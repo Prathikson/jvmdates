@@ -110,10 +110,10 @@ export default function HeroSection() {
       {/* BOTTOM LEFT: The Floating Contact Pill */}
       <div className="contact-pill absolute bottom-4 left-4 md:bottom-6 md:left-6 z-20">
         <div className="bg-[#d9d4cc] px-10 py-6 rounded-tr-[45px] rounded-bl-[15px] flex items-center gap-8 text-[#1a2e21] shadow-xl border border-white/10">
-          <a href="tel:+919876543210" className="hover:scale-110 transition-transform duration-300">
+          <a href="tel:+916382270663" className="hover:scale-110 transition-transform duration-300">
             <Phone size={22} fill="currentColor" stroke="none" />
           </a>
-          <a href="https://wa.me/919876543210" className="hover:scale-110 transition-transform duration-300">
+          <a href="https://wa.me/916382270663" className="hover:scale-110 transition-transform duration-300">
             <MessageCircle size={25} fill="currentColor" stroke="none" />
           </a>
           <a href="mailto:jvmdates@gmail.com" className="hover:scale-110 transition-transform duration-300">
