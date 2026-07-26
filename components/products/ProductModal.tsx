@@ -4,7 +4,7 @@ import { X, Minus, Plus, ShoppingBag, Star, MapPin, Weight, CheckCircle } from "
 import { useLang } from "@/context/LangContext";
 import { useCart, type WeightOption, getItemPrice } from "@/context/CartContext";
 import { type Product } from "@/data/products";
-import { PRODUCT_IMGS, DEFAULT_IMG } from "@/app/products/page";
+import { PRODUCT_IMGS, DEFAULT_IMG } from "@/app/products/ProductClient";
 
 interface Props {
   product: Product;

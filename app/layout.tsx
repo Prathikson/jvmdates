@@ -31,7 +31,7 @@ const jsonLd = {
   "description": "Premium quality Dates and Dry Fruits in Coimbatore. Best prices for Medjool, Ajwa, and high-quality nuts.",
   "url": siteConfig.url,
   "logo": `${siteConfig.url}/images/logo.svg`,
-  "image": `${siteConfig.url}/images/store-front.jpg`, // Add a store image if you have one
+  "image": `${siteConfig.url}/images/store-front.jpg`,
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "YOUR_STREET_ADDRESS", // REPLACE THIS
@@ -73,6 +73,7 @@ export const metadata: Metadata = {
   description: "Fresh and premium quality Dates and Dry Fruits in Coimbatore. Best pricing for Ajwa, Medjool, Almonds, and Cashews. Order online for delivery in Tamil Nadu.",
   icons: {
        icon: [
+        { url: "/favicon.ico", sizes: "any" },
       { url: "/logo.svg", type: "image/svg+xml" },
     ],
     shortcut: "/images/logo.svg",

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Plus, Star, MapPin, SearchX } from "lucide-react";
 import { useLang } from "@/context/LangContext";
 import { type Product } from "@/data/products";
-import { PRODUCT_IMGS, DEFAULT_IMG } from "@/app/products/page";
+import { PRODUCT_IMGS, DEFAULT_IMG } from "@/app/products/ProductClient";
 
 export default function ProductGrid({ products, onOpen }: { products: Product[]; onOpen: (p: Product) => void }) {
   const { t } = useLang();
