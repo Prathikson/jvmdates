@@ -14,12 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // 2. Dynamic Product Pages (CRITICAL for SEO)
-  const productPages: MetadataRoute.Sitemap = products.map((product) => ({
-    url: `${baseUrl}/products/${product.id}`, // or product.slug
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  // const productPages: MetadataRoute.Sitemap = products.map((product) => ({
+  //   url: `${baseUrl}/products/${product.id}`, // or product.slug
+  //   lastModified: new Date(),
+  //   changeFrequency: "weekly",
+  //   priority: 0.8,
+  // }));
 
-  return [...staticPages, ...productPages];
+  return [...staticPages];
 }
