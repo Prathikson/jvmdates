@@ -1,17 +1,25 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
-import { products } from "@/data/products";
+import { products } from "@/data/products"; // Ensure this path is correct
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = [
-    { url: siteConfig.url, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 1 },
-    { url: `${siteConfig.url}/about`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${siteConfig.url}/products`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${siteConfig.url}/contact`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${siteConfig.url}/privacy`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.3 },
-    { url: `${siteConfig.url}/terms`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.3 },
-    { url: `${siteConfig.url}/cookies`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.2 },
+  const baseUrl = siteConfig.url;
+
+  // 1. Static Pages
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
+    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/products`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
+    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
-  return staticPages;
+  // 2. Dynamic Product Pages (CRITICAL for SEO)
+  const productPages: MetadataRoute.Sitemap = products.map((product) => ({
+    url: `${baseUrl}/products/${product.id}`, // or product.slug
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...productPages];
 }

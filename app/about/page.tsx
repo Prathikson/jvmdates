@@ -7,8 +7,15 @@ import AboutValues   from "@/components/about/AboutValues";
 import AboutTimeline from "@/components/about/AboutTimeline";
 import NewsletterSection from "@/components/home/NewsletterSection";
 import Footer        from "@/components/Footer";
+import { constructMetadata } from "@/components/provider/SEO";
 
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
+
+export const metadata = constructMetadata({
+  title: "About JVM Dates & Dry Fruits - Our Quality Promise",
+  description: "Learn how JVM Dates & Dry Fruits sources the freshest nuts and dates for the Coimbatore community. Our focus is quality and health.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   useEffect(() => {

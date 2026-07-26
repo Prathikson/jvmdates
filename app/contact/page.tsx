@@ -7,8 +7,15 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import FaqSection  from "@/components/contact/FaqSection";
 import Footer      from "@/components/Footer";
+import { constructMetadata } from "@/components/provider/SEO";
 
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
+
+export const metadata = constructMetadata({
+  title: "Contact JVM Dates - Visit our Coimbatore Store",
+  description: "Visit JVM Dates & Dry Fruits in Coimbatore or call us for wholesale orders. Get the best prices on fresh dry fruits today.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   const { t } = useLang();

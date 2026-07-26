@@ -14,8 +14,16 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CtaSplitSection    from "@/components/home/CtaSplitSection";
 import NewsletterSection  from "@/components/home/NewsletterSection";
 import Footer             from "@/components/Footer";
+import { constructMetadata } from "@/components/provider/SEO";
 
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
+
+
+export const metadata = constructMetadata({
+  title: "Fresh & Premium Dates and Dry Fruits in Coimbatore",
+  description: "Get the best pricing and highest quality Dates and Dry Fruits in Coimbatore. JVM Dates & Dry Fruits offers fresh Almonds, Walnuts, Cashews and Imported Dates.",
+  path: "/",
+});
 
 export default function HomePage() {
   useEffect(() => {

@@ -11,8 +11,16 @@ import ProductGrid from "@/components/products/ProductGrid";
 import { useState, useMemo } from "react";
 import { type Product } from "@/data/products";
 import ProductModal from "@/components/products/ProductModal";
+import { constructMetadata } from "@/components/provider/SEO";
 
 if (typeof window !== "undefined") { gsap.registerPlugin(ScrollTrigger); }
+
+
+export const metadata = constructMetadata({
+  title: "Buy Premium Dry Fruits Online - Best Price in Coimbatore",
+  description: "Browse our collection of fresh, hand-picked dry fruits and imported dates. JVM Dates & Dry Fruits ensures the best quality and wholesale rates in Tamil Nadu.",
+  path: "/products",
+});
 
 export const PRODUCT_IMGS: Record<string, string> = {
   "medjool-dates": "/images/products/medjool-dates.webp",
