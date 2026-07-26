@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   },
   description: "Fresh and premium quality Dates and Dry Fruits in Coimbatore. Best pricing for Ajwa, Medjool, Almonds, and Cashews. Order online for delivery in Tamil Nadu.",
   icons: {
-    icon: "/images/logo.svg",
+       icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
     shortcut: "/images/logo.svg",
     apple: "/images/logo.svg",
   },
